@@ -1,0 +1,177 @@
+@media only screen and (max-width: 600px) {
+    div.header-wrap {
+        h1.header-title {
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    main {
+        div.container {
+            div.calc-box {
+                min-height: 200px;
+                margin-top: 0;
+                h2 {
+                    font-size: 2.2rem;
+                }
+                .nums {
+                    span.num-one,
+                    span.num-two,
+                    span.num-final {
+                        font-size: 4rem;
+                    }
+
+                    span.questionmark {
+                        font-size: 4rem;
+                    }
+                }
+
+                .notification-text {
+                    margin-bottom: 20px;
+                }
+            }
+            .user-inputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                .pause-btn {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    justify-self: center;
+                }
+
+                .answers {
+                    grid-column: 1 / -1;
+                    grid-row: 1 / 2;
+                    justify-self: center;
+                    width: 250px;
+                    height: 250px;
+                    margin-bottom: 10px;
+
+                    .controls-img {
+                        width: 85%;
+                    }
+                }
+                .reset-btn {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    justify-self: center;
+                }
+                .reset-btn,
+                .pause-btn {
+                    align-self: center;
+                }
+            }
+            .scoreboard {
+                h2 {
+                    font-size: 3rem;
+                }
+                .score-num span {
+                    font-size: 2.2rem;
+                    span {
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+            .header-title {
+                font-size: 3rem;
+            }
+
+            .modal-overlay .modal {
+                width: 100%;
+            }
+            .header {
+                h1 {
+                    margin: 12px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    div.header-wrap {
+        h1.header-title {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+    main {
+        div.container {
+            div.calc-box {
+                padding: 1px;
+                min-height: initial;
+                p {
+                    margin: 0;
+                }
+                .nums {
+                    text-align: left;
+                    font-size: 3rem !important;
+                    span.num-one,
+                    span.num-two,
+                    span.num-final {
+                        font-size: 3rem !important;
+                    }
+                    .header-title {
+                        font-size: 2.5rem;
+                    }
+                }
+                h2 {
+                    font-size: 1.8rem;
+                    padding-top: 10px;
+                }
+                & > * {
+                    padding: 5px;
+                }
+            }
+            .user-inputs {
+                button {
+                    font-size: 1.4rem;
+                }
+
+                button.answer {
+                    font-size: 1.8rem;
+                }
+                .reset-btn,
+                .pause-btn {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .scoreboard {
+                margin: 5px 5px;
+                h2 {
+                    font-size: 2.2rem;
+                }
+                .score-num span {
+                    margin: 5px 5px;
+                    margin-left: 0;
+                    font-size: 2rem;
+                    span {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            .header-wrap {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .modal-overlay .modal {
+        padding: 10px;
+        width: 100%;
+        .modal-footer {
+            justify-content: center;
+        }
+    }
+
+    footer {
+        .footer-txt {
+            font-size: 1.2rem;
+            letter-spacing: 1.5px;
+        }
+    }
+}

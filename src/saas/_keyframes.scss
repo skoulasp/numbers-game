@@ -1,0 +1,199 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeZoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes fadeZoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wrongAnswerAnimation {
+    0%,
+    100% {
+        background-color: initial;
+    }
+    50% {
+        background-color: rgba(169, 10, 10, 0.6);
+    }
+}
+
+@keyframes answeredCorrectlyAnimation {
+    0% {
+        background: linear-gradient(90deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1);
+        border-color: rgba(0, 255, 68, 0.8);
+    }
+    20% {
+        background: linear-gradient(140deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1.01);
+        border-color: rgba(0, 255, 13, 0.9);
+    }
+    40% {
+        background: linear-gradient(180deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1);
+        border-color: rgba(54, 176, 128, 1);
+    }
+    60% {
+        background: linear-gradient(220deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1.01);
+        border-color: rgba(36, 157, 121, 1);
+    }
+    80% {
+        background: linear-gradient(260deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1);
+        border-color: rgba(36, 157, 121, 1);
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(26, 224, 178, 0.75) 0%, rgba(17, 219, 139, 0.75) 50%, rgba(0, 255, 80, 0.7) 100%);
+        transform: scale(1.01);
+        border-color: rgba(36, 157, 121, 1);
+    }
+}
+
+@keyframes correctAnswerAnimation {
+    0%,
+    100% {
+        background-color: initial;
+    }
+    50% {
+        background-color: rgba(6, 167, 46, 0.6);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scoreChange {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+}
+
+@keyframes scoreChange2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.answer.answered-correctly {
+    animation: answeredCorrectlyAnimation 0.6s 2 ease-in-out;
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s;
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.scoreChange {
+    animation: scoreChange 0.5s;
+}
+
+.scoreChange2 {
+    animation: scoreChange2 0.5s;
+}
+
+.flashing-text {
+    animation: flashing 1s infinite;
+}
+.flashing-text.won {
+    animation: flashing 0.6s infinite;
+}
+
+.flashing-text.lost {
+    animation: flashing 0.3s infinite;
+}
+
+.answer.wrong-answer {
+    animation: wrongAnswerAnimation 0.24s 5;
+}
+
+.answer.correct-answer {
+    animation: correctAnswerAnimation 0.6s 2;
+}
+
+.fadeZoomOut {
+    animation: fadeZoomOut 0.5s;
+}
+
+.answer.answered-correctly {
+    animation: answeredCorrectlyAnimation 0.8s 2 ease-in-out;
+}
+
+.show-modal {
+    animation: fadeZoomIn 0.3s ease-in-out;
+}
+.hide-modal {
+    animation: fadeZoomOut 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+}
