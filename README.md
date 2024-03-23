@@ -66,7 +66,7 @@ To install and run the project locally:
 
 ## Demo
 
-You can play the game live [here](https://skoulasp.github.io/numbers-game/.
+You can play the game live [here](https://skoulasp.github.io/numbers-game/).
 
 ## Screenshots
 
@@ -89,5 +89,3 @@ This project was created by [Your Name]. For any inquiries or feedback, feel fre
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).
-
-Enjoy sharpening your math skills with the Simple Math Practice Game!
